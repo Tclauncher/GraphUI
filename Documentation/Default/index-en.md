@@ -20,7 +20,7 @@
 >
 >   Thanks to sharpdevelop of ic # code, this is the best development tool I have ever used
 >
->   In addition, <font color = red> is prohibited for commercial use and do not do bad things </ font>
+>   In addition, <font color = red>is prohibited for commercial use and do not do bad things</font>
 
 ### DOCUMENTATION
 
