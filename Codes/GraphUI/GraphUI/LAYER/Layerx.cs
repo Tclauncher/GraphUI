@@ -8,7 +8,7 @@
  */
 using System;
 
-namespace Layerx
+namespace GraphUI
 {
 	/// <summary>
 	/// Description of Layerx.
@@ -21,5 +21,21 @@ namespace Layerx
 	}
 	public class GLocation
 	{
+		int _x;
+		int _y;
+		double _dx;
+		double _dy;
+		public int x{get{return _x;}set{_x=value;}}
+		public int y{get{return _y;}set{_y=value;}}
+		public GLocation(double dx,double dy)
+		{
+			_dx=dx;
+			_dy=dy;
+		}
+		public GLocation(int x,int y)
+		{
+			_x=x;
+			_y=y;
+		}
 	}
 }

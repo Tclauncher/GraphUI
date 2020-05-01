@@ -1,0 +1,8 @@
+D:\TAS   MFC\MyProjects\C#\GraphUI\Codes\GraphUI\Tester\bin\Debug\Tester.exe.config
+D:\TAS   MFC\MyProjects\C#\GraphUI\Codes\GraphUI\Tester\bin\Debug\Tester.exe
+D:\TAS   MFC\MyProjects\C#\GraphUI\Codes\GraphUI\Tester\bin\Debug\Tester.pdb
+D:\TAS   MFC\MyProjects\C#\GraphUI\Codes\GraphUI\Tester\obj\Debug\Tester.csprojResolveAssemblyReference.cache
+D:\TAS   MFC\MyProjects\C#\GraphUI\Codes\GraphUI\Tester\obj\Debug\Tester.exe
+D:\TAS   MFC\MyProjects\C#\GraphUI\Codes\GraphUI\Tester\obj\Debug\Tester.pdb
+D:\TAS   MFC\MyProjects\C#\GraphUI\Codes\GraphUI\Tester\bin\Debug\GraphUI.dll
+D:\TAS   MFC\MyProjects\C#\GraphUI\Codes\GraphUI\Tester\bin\Debug\GraphUI.pdb

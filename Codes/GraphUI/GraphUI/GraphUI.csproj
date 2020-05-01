@@ -44,13 +44,30 @@
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="user32">
+      <HintPath>..\Tester\bin\Debug\user32.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller.cs" />
+    <Compile Include="LAYER\Layerx.cs" />
+    <Compile Include="modules\ExceptionQueue.cs" />
+    <Compile Include="PAINT\PAINTER.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Player.Designer.cs">
       <DependentUpon>Player.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PAINT" />
+    <Folder Include="LAYER" />
+    <Folder Include="modules" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Player.resx">
+      <DependentUpon>Player.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

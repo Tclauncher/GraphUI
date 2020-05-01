@@ -9,29 +9,32 @@
 using System;
 using System.Drawing;
 using System.Drawing.Imaging;
-using System.Forms;
-namespace GraphUIvm
+using System.Runtime.InteropServices;
+namespace GraphUI
 {
 	/// <summary>
 	/// Description of PAINTER.
 	/// </summary>
-	public class PAINTER
+	class PAINTER
 	{
-		Location 
-		public PAINTER()
+		GLocation _winlocation;
+		IntPtr _handle;
+		public PAINTER(IntPtr handle,GLocation winlocation)
 		{
+			_winlocation=winlocation;
+			_handle=handle;
 		}
-		public bool PAINT(Bitmap bitmap)
+		public void PAINT(Bitmap bitmap)
 		{
 			if (!Bitmap.IsCanonicalPixelFormat(bitmap.PixelFormat) || !Bitmap.IsAlphaPixelFormat(bitmap.PixelFormat))
-                throw new ApplicationException("图片必须是32位带Alhpa通道的图片");
+                throw new ApplicationException("TEXTURE-FORMAT-ERROR");
             IntPtr oldBits = IntPtr.Zero;
             IntPtr screenDC = GetDC(IntPtr.Zero);
             IntPtr hBitmap = IntPtr.Zero;
             IntPtr memDc = CreateCompatibleDC(screenDC);
             try
             {
-                Point topLoc = new Point(Left, Top);
+                Point topLoc = new Point(_winlocation.x,_winlocation.y);
                 Size bitMapSize = new Size(bitmap.Width, bitmap.Height);
                 BLENDFUNCTION blendFunc = new BLENDFUNCTION();
                 Point srcLoc = new Point(0, 0);
@@ -42,7 +45,11 @@ namespace GraphUIvm
                 blendFunc.SourceConstantAlpha = 255;
                 blendFunc.AlphaFormat = AC_SRC_ALPHA;
                 blendFunc.BlendFlags = 0;
-                UpdateLayeredWindow(Handle, screenDC, ref topLoc, ref bitMapSize, memDc, ref srcLoc, 0, ref blendFunc, ULW_ALPHA);
+                UpdateLayeredWindow(_handle, screenDC, ref topLoc, ref bitMapSize, memDc, ref srcLoc, 0, ref blendFunc, ULW_ALPHA);
+            }
+            catch(Exception)
+            {
+            	
             }
             finally
             {
@@ -100,15 +107,15 @@ namespace GraphUIvm
 		public   const  Int32 ULW_OPAQUE  =   0x00000004 ;
 		public   const   byte  AC_SRC_OVER  =   0x00 ;
 		public   const   byte  AC_SRC_ALPHA  =   0x01 ;
-		[DllImport( " user32.dll " , ExactSpelling  =   true , SetLastError  =   true )]
+		[DllImport(@"C:\Windows\System32\user32.dll " , ExactSpelling  =   true , SetLastError  =   true )]
 		public   static   extern  Bool UpdateLayeredWindow(IntPtr hwnd, IntPtr hdcDst,  ref  Point pptDst,  ref  Size psize, IntPtr hdcSrc,  ref  Point pprSrc, Int32 crKey,  ref  BLENDFUNCTION pblend, Int32 dwFlags);
-		[DllImport( " user32.dll " , ExactSpelling  =   true , SetLastError  =   true )]
+		[DllImport(@"C:\Windows\System32\user32.dll " , ExactSpelling  =   true , SetLastError  =   true )]
 		public   static   extern  IntPtr GetDC(IntPtr hWnd);
-		[DllImport( " user32.dll " , ExactSpelling  =   true )]
+		[DllImport(@"C:\Windows\System32\user32.dll " , ExactSpelling  =   true )]
 		public   static   extern   int  ReleaseDC(IntPtr hWnd, IntPtr hDC);
-		[DllImport( " gdi32.dll " , ExactSpelling  =   true , SetLastError  =   true )]
+		[DllImport( "gdi32.dll " , ExactSpelling  =   true , SetLastError  =   true )]
 		public   static   extern  IntPtr CreateCompatibleDC(IntPtr hDC);
-		[DllImport( " gdi32.dll " , ExactSpelling  =   true , SetLastError  =   true )]
+		[DllImport( "gdi32.dll " , ExactSpelling  =   true , SetLastError  =   true )]
 		public   static   extern  Bool DeleteDC(IntPtr hdc);
 		[DllImport( " gdi32.dll " , ExactSpelling  =   true )]
 		public   static   extern  IntPtr SelectObject(IntPtr hDC, IntPtr hObject);

@@ -35,10 +35,16 @@ namespace GraphUI
 			// The InitializeComponent() call is required for Windows Forms designer support.
 			//
 			InitializeComponent();
-			
+			painter=new PAINTER(this.Handle,new GLocation(this.Location.X,this.Location.Y));
 			//
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
+			painter.PAINT(new Bitmap(@"C:\Users\Administrator\Desktop\cyclebin\a.png"));
+		}
+		PAINTER painter;
+		void PlayerShown(object sender, EventArgs e)
+		{
+			
 		}
 	}
 }

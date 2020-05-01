@@ -1,0 +1,5 @@
+D:\TAS   MFC\MyProjects\C#\GraphUI\Codes\GraphUI\GraphUI\bin\Release\GraphUI.dll
+D:\TAS   MFC\MyProjects\C#\GraphUI\Codes\GraphUI\GraphUI\obj\Release\GraphUI.csprojResolveAssemblyReference.cache
+D:\TAS   MFC\MyProjects\C#\GraphUI\Codes\GraphUI\GraphUI\obj\Release\GraphUI.Player.resources
+D:\TAS   MFC\MyProjects\C#\GraphUI\Codes\GraphUI\GraphUI\obj\Release\GraphUI.csproj.GenerateResource.Cache
+D:\TAS   MFC\MyProjects\C#\GraphUI\Codes\GraphUI\GraphUI\obj\Release\GraphUI.dll
