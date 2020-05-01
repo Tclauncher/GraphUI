@@ -4,7 +4,7 @@ Open source c # UI solution | 开源c#UI解决方案
 
 <font size=2>**By Tclauncher**</font>
 
-<font size=5>中文 | [English](https://github.com/Tclauncher/GraphUI/blob/master/Documentation/Default/index-en.md)</font>
+#### <font size=5>中文 | [English](https://github.com/Tclauncher/GraphUI/blob/master/Documentation/Default/index-en.md)</font>
 
 请选择适合的语言进行阅读 | Please choose the appropriate language to read
 
