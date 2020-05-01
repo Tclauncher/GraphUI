@@ -10,7 +10,7 @@ Open source c # UI solution | 开源c#UI解决方案
 
 [TOC]
 
-### 介绍
+### 序
 
 > ​       最近一直在找合适的c#UI解决方案，大部分都不符合心中的标准，稍微好看点的又要钱。而且还有各种强行打广告，像我这种是玩不起的。。。至于WPF，其实非常不错，只是还有点看不上。我也不知道GraphUI会做成什么样子，至少我在做我喜欢的东西。
 >
@@ -22,9 +22,17 @@ Open source c # UI solution | 开源c#UI解决方案
 >
 > ​      另外，<font color=red>禁止用于商业用途，以及不要干些不好的事</font>
 
+### 介绍
+
+> [GraphUI.Intro](https://github.com/Tclauncher/GraphUI/blob/master/Documentation/)
+>
+> 注意，因为时间并不多，介绍可能不是最新的
+
 ### 文档
 
 > [GraphUI.Documentation](https://github.com/Tclauncher/GraphUI/tree/master/Documentation/index-zh.md)
+>
+> 这个文档其实是用于理清我的开发思路的。当然也可以当文档看。
 
 ### 错误上传
 

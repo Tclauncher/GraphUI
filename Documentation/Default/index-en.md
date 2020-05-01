@@ -22,9 +22,17 @@
 >
 >   In addition, <font color = red>is prohibited for commercial use and do not do bad things</font>
 
+### INTRO
+
+> [GraphUI.Intro](https://github.com/Tclauncher/GraphUI/blob/master/Documentation/)
+>
+> Note that because there is not much time, the introduction may not be the latest
+
 ### DOCUMENTATION
 
 > [GraphUI.Documentation](https://github.com/Tclauncher/GraphUI/tree/master/Documentation/index-en.md)
+>
+> This document is actually used to sort out my development ideas. Of course, it can also be viewed as a document.
 
 ### Report Errors
 
