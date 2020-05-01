@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 5.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphUIvm", "GraphUIvm\GraphUIvm.csproj", "{155D5308-0D65-4FAE-A42D-48C34732963F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{B9357A32-D539-42E7-8B31-DA5509611332}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphUImc", "GraphUImc\GraphUImc.csproj", "{DF0FDBE4-CFA0-447C-9317-F50D55D1CEE1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{155D5308-0D65-4FAE-A42D-48C34732963F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{155D5308-0D65-4FAE-A42D-48C34732963F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{155D5308-0D65-4FAE-A42D-48C34732963F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{155D5308-0D65-4FAE-A42D-48C34732963F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9357A32-D539-42E7-8B31-DA5509611332}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9357A32-D539-42E7-8B31-DA5509611332}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9357A32-D539-42E7-8B31-DA5509611332}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9357A32-D539-42E7-8B31-DA5509611332}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF0FDBE4-CFA0-447C-9317-F50D55D1CEE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF0FDBE4-CFA0-447C-9317-F50D55D1CEE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF0FDBE4-CFA0-447C-9317-F50D55D1CEE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF0FDBE4-CFA0-447C-9317-F50D55D1CEE1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
