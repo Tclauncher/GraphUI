@@ -24,7 +24,7 @@ Open source c # UI solution | 开源c#UI解决方案
 
 ### 文档
 
-> [GraphUI.Documentation](https://github.com/Tclauncher/GraphUI/tree/master/Documentation)
+> [GraphUI.Documentation](https://github.com/Tclauncher/GraphUI/tree/master/Documentation/index-zh)
 
 ### 错误上传
 

@@ -24,7 +24,7 @@
 
 ### DOCUMENTATION
 
-> [GraphUI.Documentation](https://github.com/Tclauncher/GraphUI/tree/master/Documentation)
+> [GraphUI.Documentation](https://github.com/Tclauncher/GraphUI/tree/master/Documentation/index-en)
 
 ### Report Errors
 
