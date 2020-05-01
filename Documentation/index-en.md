@@ -1,6 +1,6 @@
 # [GraphUI](https://github.com/Tclauncher/GraphUI) | [DOCUMENTATION](https://github.com/Tclauncher/GraphUI/blob/master/Documentation/index-en.md)
 
-[中文]() | English
+[中文](https://github.com/Tclauncher/GraphUI/blob/master/Documentation/index-zh.md) | English
 
 [GraphUI]()
 
