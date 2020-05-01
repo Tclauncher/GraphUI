@@ -4,7 +4,7 @@
 
 <font size=2>**By Tclauncher**</font>
 
-#### <font size=5>English | [中文](https://github.com/Tclauncher/GraphUI/blob/master/Documentation/Default/index-zh.md)</font>
+#### <font size=5>English | [中文](https://github.com/Tclauncher/GraphUI/blob/master/Documentation/index-zh.md)</font>
 
 请选择适合的语言进行阅读 | Please choose the appropriate language to read
 
