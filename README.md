@@ -1,6 +1,6 @@
 # <font size=9>GraphUI</font>
 
-Open source c # UI solution | 开源c#UI解决方案
+开源c#UI解决方案 | Open source c # UI solution 
 
 <font size=2>**By Tclauncher**</font>
 
