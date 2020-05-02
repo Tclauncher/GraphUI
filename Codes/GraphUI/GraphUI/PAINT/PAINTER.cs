@@ -29,7 +29,7 @@ namespace GraphUI
 			if (!Bitmap.IsCanonicalPixelFormat(bitmap.PixelFormat) || !Bitmap.IsAlphaPixelFormat(bitmap.PixelFormat))
                 throw new ApplicationException("TEXTURE-FORMAT-ERROR");
             IntPtr oldBits = IntPtr.Zero;
-            IntPtr screenDC = GetDC(IntPtr.Zero);
+            IntPtr screenDC = GetDC(_handle);
             IntPtr hBitmap = IntPtr.Zero;
             IntPtr memDc = CreateCompatibleDC(screenDC);
             try

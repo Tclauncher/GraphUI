@@ -9,6 +9,7 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Threading;
 namespace GraphUI
 {
 	/// <summary>
@@ -18,8 +19,16 @@ namespace GraphUI
 	{
 		public Controller()
 		{
-			Player p=new GraphUI.Player();
+			FORM.Player p=new FORM.Player();
 			p.Show();
+			for(int i=9;i>=0;i--)
+			{
+				Thread.Sleep(1000);
+				Console.Write(i.ToString());
+			}
+		//	Player.EVENT_UPDATE updater;
+		//	updater = p.FUpdate;
+		//	updater();
 		}
 	}
 }

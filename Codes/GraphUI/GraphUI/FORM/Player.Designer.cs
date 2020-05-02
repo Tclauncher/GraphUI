@@ -2,20 +2,20 @@
  * 由SharpDevelop创建。
  * 用户： Administrator
  * 日期: 2020/5/1
- * 时间: 12:53
+ * 时间: 16:06
  * 
  * 要改变这种模板请点击 工具|选项|代码编写|编辑标准头文件
  */
-namespace GraphUI
+namespace GraphUI.FORM
 {
 	partial class Player
 	{
 		/// <summary>
 		/// Designer variable used to keep track of non-visual components.
 		/// </summary>
-		
-		private System.Windows.Forms.Label label1;
 		private System.ComponentModel.IContainer components = null;
+		private System.Windows.Forms.Timer timer1;
+		
 		/// <summary>
 		/// Disposes resources used by the form.
 		/// </summary>
@@ -37,31 +37,23 @@ namespace GraphUI
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.label1 = new System.Windows.Forms.Label();
+			this.components = new System.ComponentModel.Container();
+			this.timer1 = new System.Windows.Forms.Timer(this.components);
 			this.SuspendLayout();
 			// 
-			// label1
+			// timer1
 			// 
-			this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label1.Font = new System.Drawing.Font("微软雅黑", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-			this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-			this.label1.Location = new System.Drawing.Point(0, 0);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(622, 343);
-			this.label1.TabIndex = 0;
-			this.label1.Text = "GraphUI";
-			this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.timer1.Enabled = true;
+			this.timer1.Interval = 1000;
+			this.timer1.Tick += new System.EventHandler(this.Timer1Tick);
 			// 
 			// Player
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackColor = System.Drawing.SystemColors.ButtonShadow;
-			this.ClientSize = new System.Drawing.Size(622, 343);
-			this.Controls.Add(this.label1);
+			this.ClientSize = new System.Drawing.Size(284, 262);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Name = "Player";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Player";
 			this.ResumeLayout(false);
 

@@ -2,7 +2,7 @@
  * 由SharpDevelop创建。
  * 用户： Administrator
  * 日期: 2020/5/1
- * 时间: 12:53
+ * 时间: 16:06
  * 
  * 要改变这种模板请点击 工具|选项|代码编写|编辑标准头文件
  */
@@ -10,16 +10,13 @@ using System;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace GraphUI
+namespace GraphUI.FORM
 {
 	/// <summary>
 	/// Description of Player.
 	/// </summary>
-	partial class Player : Form
+	public partial class Player : Form
 	{
-		/// <summary>
-		/// 将窗口显示模式改为Layer模式
-		/// </summary>
 		protected override CreateParams CreateParams
 		{
 			get
@@ -39,11 +36,9 @@ namespace GraphUI
 			//
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
-			
 		}
 		PAINTER painter;
-		public delegate void EVENT_UPDATE();
-		public void FUpdate()
+		void Timer1Tick(object sender, EventArgs e)
 		{
 			painter=new PAINTER(this.Handle,new GLocation(this.Location.X,this.Location.Y));
 			painter.PAINT(new Bitmap(@"C:\Users\Administrator\Desktop\cyclebin\a.png"));

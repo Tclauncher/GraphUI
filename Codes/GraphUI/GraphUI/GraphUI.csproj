@@ -50,6 +50,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller.cs" />
+    <Compile Include="FORM\Player.cs" />
+    <Compile Include="FORM\Player.Designer.cs">
+      <DependentUpon>Player.cs</DependentUpon>
+    </Compile>
     <Compile Include="LAYER\Layerx.cs" />
     <Compile Include="modules\ExceptionQueue.cs" />
     <Compile Include="PAINT\PAINTER.cs" />
@@ -63,8 +67,12 @@
     <Folder Include="PAINT" />
     <Folder Include="LAYER" />
     <Folder Include="modules" />
+    <Folder Include="FORM" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FORM\Player.resx">
+      <DependentUpon>Player.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Player.resx">
       <DependentUpon>Player.cs</DependentUpon>
     </EmbeddedResource>
